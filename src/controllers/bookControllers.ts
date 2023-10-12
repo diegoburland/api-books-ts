@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { Book } from "../models";
 
-const books: Book[] = [];
+export const books: Book[] = [];
 
 export const getAllBooks = (req: Request, res: Response) => {
   res.json(books);
